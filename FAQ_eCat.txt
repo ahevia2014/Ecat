@@ -1,0 +1,48 @@
+Aquí tienes un archivo de **Preguntas Frecuentes (FAQ)** diseñado específicamente para los usuarios de **eCat**. Este documento es ideal para incluirlo como un archivo `LEEME.txt` o `FAQ.pdf` junto al ejecutable.
+
+---
+
+# 🐾 eCat Biometrics - Preguntas Frecuentes (FAQ)
+
+### 1. ¿Qué es eCat y cómo funciona?
+
+**eCat** es una herramienta de peritaje felino que utiliza visión artificial para comparar dos gatos. A diferencia del ojo humano, eCat analiza la **huella nasal** (textura de la piel de la nariz) y los **metadatos EXIF** de las fotos para determinar si existe una coincidencia biológica y temporal.
+
+### 2. ¿Por qué el programa me pide seleccionar la nariz manualmente?
+
+Aunque la IA detecta el rostro del gato, la **nariz** es la parte que contiene los patrones únicos (similares a una huella dactilar). La selección manual garantiza que el algoritmo analice exactamente el tejido nasal y no el pelaje o los bigotes, lo que reduce los falsos positivos.
+
+### 3. ¿Qué significan los resultados en el archivo `analisis_biometrico.txt`?
+
+* **Similitud de Textura (SSIM):** Un valor cercano al 100% significa que los poros y manchas de la nariz son idénticos.
+* **Distancia de Color (RGB):** Un valor bajo (menor a 30) indica que el tono de rosa o negro es el mismo. Si es alto, los gatos tienen pigmentaciones diferentes (ej. Rosa pálido vs. Rosa terracota).
+
+### 4. ¿Por qué algunas fotos se mueven a "FUERA_DE_FECHA"?
+
+eCat utiliza la información oculta de tus fotos (metadatos). Si configuraste el rango para buscar un gato perdido en **2023**, pero subiste fotos de tu **Samsung S23 Ultra** tomadas en **2026**, el sistema las descarta automáticamente por imposibilidad cronológica.
+
+### 5. ¿Qué pasa si mis fotos no tienen metadatos (ej. descargas de Facebook)?
+
+Las fotos de redes sociales suelen perder su fecha original. **eCat** está programado para **no descartar** estas fotos por fecha; en su lugar, les da prioridad en el análisis biométrico para que no pierdas ninguna pista importante de avisos comunitarios.
+
+### 6. ¿Es seguro usar eCat con mis fotos privadas?
+
+**Totalmente.** eCat procesa todo de manera local en tu computadora. Tus fotos nunca se suben a la nube ni se comparten con servidores externos. La privacidad de tu galería está garantizada.
+
+### 7. El programa movió una foto a "SIN_GATO" pero sí hay un gato ahí. ¿Por qué?
+
+Esto sucede si el gato está de espaldas, muy lejos o la iluminación es muy baja. El detector busca rasgos faciales claros (ojos, orejas, nariz). Si la foto es importante, puedes moverla manualmente a la carpeta principal y volver a ejecutar el análisis.
+
+### 8. ¿Cómo puedo obtener mejores resultados?
+
+* Usa fotos con **luz natural**.
+* Asegúrate de que la nariz no tenga comida o suciedad que altere la textura.
+* Evita fotos con mucho zoom digital que "pixelen" la piel de la nariz.
+
+---
+
+### 💡 Consejo Pro para el caso "Botitas":
+
+Si el reporte de **eCat** muestra una similitud de textura menor al **70%** y una diferencia de color alta, tienes una **prueba técnica sólida** de que el gato del aviso y el tuyo son individuos diferentes, independientemente de que ambos sean del mismo color.
+
+¿Te gustaría que añada alguna pregunta específica sobre los modelos de teléfono (S23 Ultra vs S20 FE) o sobre cómo interpretar los montajes visuales de evidencia?
